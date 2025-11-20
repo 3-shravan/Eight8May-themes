@@ -1,0 +1,41 @@
+{
+  "name": "eight8may-theme",
+
+  "displayName": "Eight8May Theme",
+  "description": "A minimal mint-blue React-style theme.",
+  "version": "0.0.1",
+  "keywords": [
+    "8",
+    "eight",
+    "may",
+    "vsc",
+    "dark",
+    "theme"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "dev": "node src/watcher"
+  },
+  "publisher": "Shravan",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "eight8may",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eight8may-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "filewatcher": "^3.0.1",
+    "sharp": "^0.28.0"
+  }
+}
