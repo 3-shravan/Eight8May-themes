@@ -38,6 +38,21 @@
         "label": "eight8may",
         "uiTheme": "vs-dark",
         "path": "./themes/eight8may-color-theme.json"
+      },
+      {
+        "label": "eight8may noitalics",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eight8may-color-theme-noitalics.json"
+      },
+      {
+        "label": "eight8may storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eight8may-color-theme-storm.json"
+      },
+      {
+        "label": "eight8may storm-noitalics",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eight8may-color-theme-noitalics-storm.json"
       }
     ]
   },
