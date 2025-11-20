@@ -1,9 +1,9 @@
 {
   "name": "eight8may-theme",
-
   "displayName": "Eight8May Theme",
+  "icon": "assets/icon.png",
   "description": "A minimal mint-blue React-style theme.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "8",
     "eight",
@@ -13,18 +13,25 @@
     "theme"
   ],
   "files": [
+    "assets",
+    "themes",
+    "src",
     "index.js"
   ],
   "scripts": {
     "dev": "node src/watcher"
   },
-  "publisher": "Shravan",
+  "publisher": "ShravanYadav",
   "engines": {
-    "vscode": "^1.106.1"
+    "vscode": "*"
   },
   "categories": [
     "Themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3-shravan/Eight8May-themes"
+  },
   "contributes": {
     "themes": [
       {
