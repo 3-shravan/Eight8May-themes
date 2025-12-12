@@ -1,5 +1,5 @@
 {
-    "name": "poimandres dark theme",
+    "name": "eightmay dark theme",
     "type": "dark",
     "colors": {
       "activityBar.background": "#161c1f",
@@ -31,7 +31,7 @@
       "editorGroupHeader.tabsBackground": "#161c1f",
       "editorHoverWidget.background": "#161c1f",
       "editorHoverWidget.border": "#ffffff10",
-      "editorIndentGuide.background": "#324547",
+      "editorIndentGuide.background1": "#324547",
       "editorLineNumber.foreground": "#80808050",
       "editorLink.activeForeground": "#a7cdd9",
       "editorSuggestWidget.background": "#161c1f",
@@ -65,7 +65,7 @@
       "editorHint.foreground": "#dcf8fcb3",
       "editorHoverWidget.foreground": "#cfdee6",
       "editorHoverWidget.statusBarBackground": "#202430",
-      "editorIndentGuide.activeBackground": "#e3e4e229",
+      "editorIndentGuide.activeBackground1": "#e3e4e229",
       "editorInfo.foreground": "#a7cdd9",
       "editorInlineHint.background": "#cfdee6",
       "editorInlineHint.foreground": "#161c1f",
