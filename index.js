@@ -1,21 +1,21 @@
-'use strict'
-const foregroundColor = '#e4f0fb'
-const backgroundColor = '#1b1e28'
-const red = '#d0679d'
-const green = '#5DE4c7'
-const yellow = '#fffac2'
-const blue = '#ADD7FF'
-const magenta = '#f087bd'
-const cyan = '#91B4D5'
+"use strict";
+const foregroundColor = "#e4f0fb";
+const backgroundColor = "#1b1e28";
+const red = "#d0679d";
+const green = "#5DE4c7";
+const yellow = "#fffac2";
+const blue = "#ADD7FF";
+const magenta = "#f087bd";
+const cyan = "#91B4D5";
 
 exports.decorateConfig = (config) =>
   Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
-    borderColor: 'transparent',
-    cursorColor: '#97979b',
+    borderColor: "transparent",
+    cursorColor: "#97979b",
     cursorAccentColor: backgroundColor,
-    selectionColor: '#717cb425',
+    selectionColor: "#717cb425",
     colors: {
       black: backgroundColor,
       red,
@@ -24,8 +24,8 @@ exports.decorateConfig = (config) =>
       blue,
       magenta,
       cyan,
-      white: '#f1f1f0',
-      lightBlack: '#686868',
+      white: "#f1f1f0",
+      lightBlack: "#686868",
       lightRed: red,
       lightGreen: green,
       lightYellow: yellow,
@@ -56,4 +56,4 @@ exports.decorateConfig = (config) =>
 		/* Allow custom css / overrides */
 		${config.css}
 	`,
-  })
+  });

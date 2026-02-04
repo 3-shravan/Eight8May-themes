@@ -1,63 +1,56 @@
 const base = {
   colors: {
-    brightYellow: '#cfe8e7',        
-    brightMint: '#4ec9b0',         
-    lowerMint: '#3aa995',          
-    blueishGreen: '#2e8b85',      
+    brightYellow: "#cfe8e7",
+    brightMint: "#4ec9b0",
+    lowerMint: "#3aa995",
+    blueishGreen: "#2e8b85",
 
-    lowerBlue: '#70899e',          
-    lightBlue: '#a7cdd9',          
-    desaturatedBlue: '#7da5b3',    
-    bluishGrayBrighter: '#dcf8fc', 
+    lowerBlue: "#70899e",
+    lightBlue: "#a7cdd9",
+    desaturatedBlue: "#7da5b3",
+    bluishGrayBrighter: "#dcf8fc",
 
-    hotRed: '#ed537a',             
-    pink: '#b6d1cd',                
-    gray: '#cfdee6',               
+    hotRed: "#ed537a",
+    pink: "#b6d1cd",
+    gray: "#cfdee6",
 
-    darkerGray: '#808080',         
-    bluishGray: '#5a5a5a',          
-    focus: '#324547',              
-    bg: '#161c1f',                 
-    offWhite: '#f3f3f3',          
-    selection: '#1e424a',        
+    darkerGray: "#808080",
+    bluishGray: "#5a5a5a",
+    focus: "#324547",
+    bg: "#161c1f",
+    offWhite: "#f3f3f3",
+    selection: "#1e424a",
 
-    white: '#ffffff',
-    black: '#000000',
-    transparent: '#00000000',
+    white: "#ffffff",
+    black: "#000000",
+    transparent: "#00000000",
   },
 
   styles: {
-    fontStyle: 'italic',
+    fontStyle: "italic",
   },
-}
+};
 
-const noitalics = { ...base, styles: { ...base.styles, fontStyle: '' } }
-
-
+const noitalics = { ...base, styles: { ...base.styles, fontStyle: "" } };
 
 const storm = {
   ...base,
   colors: {
     ...base.colors,
-    darkerGray: '#868cad',
-    bluishGray: '#607487',
-    focus: '#404350',
-    bg: '#171b21',
-    selection: '#818cc425',
-    black: '#101010',
+    darkerGray: "#868cad",
+    bluishGray: "#607487",
+    focus: "#404350",
+    bg: "#171b21",
+    selection: "#818cc425",
+    black: "#101010",
   },
-}
+};
 
 const stormNoitalics = {
   ...base,
   colors: { ...storm.colors },
-  styles: { ...base.styles, fontStyle: '' },
-}
-
-
-
-
-
+  styles: { ...base.styles, fontStyle: "" },
+};
 
 function schema({ colors, styles }) {
   return `{
@@ -1270,11 +1263,8 @@ function schema({ colors, styles }) {
   }}
     ]
   }
-  `
+  `;
 }
-
-
-
 
 function svg({ colors }) {
   const circle = (color, i) => `
@@ -1283,19 +1273,19 @@ function svg({ colors }) {
       cy="${Math.ceil((i + 1) / 4) * 10}"
       cx="${((i % 4) + 1) * 10}"
       fill="${color}"
-    />`
+    />`;
   return `
   <svg width="200" height="250" viewBox="0 0 50 ${
     Math.ceil(Object.keys(colors).length / 4) * 12
   }" xmlns="http://www.w3.org/2000/svg">
-    ${Object.values(colors).map(circle).join('')}
+    ${Object.values(colors).map(circle).join("")}
   </svg>
-  `
+  `;
 }
 
-module.exports.schema = schema
-module.exports.base = base
-module.exports.noitalics = noitalics
-module.exports.storm = storm
-module.exports.stormNoitalics = stormNoitalics
-module.exports.svg = svg
+module.exports.schema = schema;
+module.exports.base = base;
+module.exports.noitalics = noitalics;
+module.exports.storm = storm;
+module.exports.stormNoitalics = stormNoitalics;
+module.exports.svg = svg;

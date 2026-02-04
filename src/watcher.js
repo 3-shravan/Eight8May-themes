@@ -13,11 +13,11 @@ function generateTheme() {
   console.log("STORM COLORS:", storm.colors) 
 
 
-  fs.writeFile('themes/eight8may-color-theme.json', schema(base), (err) => err && console.log(err))
-  fs.writeFile('themes/eight8may-color-theme-storm.json', schema(storm), (err) => err && console.log(err))
-  fs.writeFile('themes/eight8may-color-theme-noitalics.json', schema(noitalics), (err) => err && console.log(err))
+  fs.writeFile('themes/eight8may-2-color-theme.json', schema(base), (err) => err && console.log(err))
+  fs.writeFile('themes/eight8may--2-color-theme-storm.json', schema(storm), (err) => err && console.log(err))
+  fs.writeFile('themes/eight8may-2-color-theme-noitalics.json', schema(noitalics), (err) => err && console.log(err))
   fs.writeFile(
-    'themes/eight8may-color-theme-noitalics-storm.json',
+    'themes/eight8may-2-color-theme-noitalics-storm.json',
     schema(stormNoitalics),
     (err) => err && console.log(err),
   )
